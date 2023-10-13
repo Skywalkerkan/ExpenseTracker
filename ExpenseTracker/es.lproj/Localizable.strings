@@ -1,0 +1,97 @@
+"Hoş geldiniz İsim" = "Bienvenido Nombre";
+"Recent Transactions" = "Transacciones Recientes";
+"View all" = "Ver todo";
+"Income" = "Ingresos";
+"Expense" = "Gasto";
+"Total" = "Total";
+"Current Balance" = "Saldo Actual";
+"No note" = "Sin nota";
+"Amount:" = "Cantidad:";
+"Category:" = "Categoría:";
+"Category" = "Categoría";
+"Note:" = "Nota:";
+"Date:" = "Fecha:";
+"Transaction Categories" = "Categorías de Transacción";
+"Type a note" = "Escriba una nota";
+"Salary" = "Salario";
+"Exchange" = "Intercambio";
+"Interest" = "Interés";
+"Gift" = "Regalo";
+"Passive Income" = "Ingresos Pasivos";
+"Allowance" = "Asignación";
+"Advance" = "Adelanto";
+"Other" = "Otro";
+"Sunday" = "Domingo";
+"Monday" = "Lunes";
+"Tuesday" = "Martes";
+"Thursday" = "Miércoles";
+"Wednesday" = "Jueves";
+"Friday" = "Viernes";
+"Saturday" = "Sábado";
+"Health" = "Salud";
+"Car Expenses" = "Gastos de Automóvil";
+"Household" = "Hogar";
+"Pet Care" = "Cuidado de Mascotas";
+"Transport" = "Transporte";
+"Dining Out" = "Comer Fuera";
+"Sports" = "Deportes";
+"Clothing" = "Ropa";
+"Shopping" = "Compras";
+"Vacation" = "Vacaciones";
+"Education" = "Educación";
+"Work" = "Trabajo";
+"Other" = "Otro";
+"Daily" = "Diario";
+"Weekly" = "Semanal";
+"Monthly" = "Mensual";
+"Yearly" = "Anual";
+"All Times" = "Todos los Tiempos";
+"Interval" = "Intervalo";
+"Stars" = "Estrellas";
+"Not Yok" = "Sin Nota";
+
+
+"Sağlık" = "Salud";
+"Araba Masrafları" = "Gastos de Coche";
+"Ev Harcamaları" = "Gastos del Hogar";
+"Hayvan Bakım" = "Cuidado de Mascotas";
+"Ulaşım" = "Transporte";
+"Dışarıda Yemek" = "Comer Fuera";
+"Spor" = "Deporte";
+"Giyim" = "Ropa";
+"Alışveriş" = "Compras";
+"Evcil Hayvan" = "Cuidado de Mascotas";
+"Tatil" = "Vacaciones";
+"Eğitim" = "Educación";
+"İş" = "Trabajo";
+"Diğer" = "Otro";
+"Maaş" = "Salario";
+"Borsa" = "Bolsa";
+"Faiz" = "Interés";
+"Hediye" = "Regalo";
+"Pasif Gelir" = "Ingresos Pasivos";
+"Harçlık" = "Asignación";
+"Avans" = "Adelanto";
+"Diğer" = "Otro";
+
+
+"No transactions were found" = "No se encontraron transacciones";
+
+"No transaction were wound to chosen interval date and category" = "No se encontró ninguna transacción para la fecha y categoría del intervalo elegido";
+
+
+"Please Select a Transaction Category" = "Por favor, seleccione una categoría de transacción";
+"Wrong Input" = "Entrada incorrecta";
+"Please Type a Number" = "Por favor, introduzca un número";
+
+
+"All Transactions" = "Todas las transacciones";
+"Transactions for a day" = "Transacciones diarias";
+"Transactions for a week" = "Transacciones semanales";
+"Transactions for a month" = "Transacciones mensuales";
+"Transactions for a year" = "Transacciones anuales";
+"Budget Control" = "Control de presupuesto";
+
+
+"Yıldızla" = "Estrella";
+"Sil" = "Borrar";

@@ -1,0 +1,96 @@
+"Hoş geldiniz İsim" = "Willkommen Vorname";
+"Recent Transactions" = "Letzte Transaktionen";
+"View all" = "Alle anzeigen";
+"Income" = "Einkommen";
+"Expense" = "Ausgaben";
+"Total" = "Gesamt";
+"Current Balance" = "Aktueller Kontostand";
+"No note" = "Keine Notiz";
+"Amount:" = "Betrag:";
+"Category:" = "Kategorie:";
+"Category" = "Kategorie";
+"Note:" = "Hinweis:";
+"Date:" = "Datum:";
+"Transaction Categories" = "Transaktionskategorien";
+"Type a note" = "Eine Notiz schreiben";
+"Salary" = "Gehalt";
+"Exchange" = "Austausch";
+"Interest" = "Zinsen";
+"Gift" = "Geschenk";
+"Passive Income" = "Passives Einkommen";
+"Allowance" = "Zulage";
+"Advance" = "Vorschuss";
+"Other" = "Andere";
+"Sunday" = "Sonntag";
+"Monday" = "Montag";
+"Tuesday" = "Dienstag";
+"Thursday" = "Mittwoch";
+"Wednesday" = "Donnerstag";
+"Friday" = "Freitag";
+"Saturday" = "Samstag";
+"Health" = "Gesundheit";
+"Car Expenses" = "Autokosten";
+"Household" = "Haushalt";
+"Pet Care" = "Tierpflege";
+"Transport" = "Transport";
+"Dining Out" = "Essen gehen";
+"Sports" = "Sport";
+"Clothing" = "Kleidung";
+"Shopping" = "Einkaufen";
+"Vacation" = "Urlaub";
+"Education" = "Bildung";
+"Work" = "Arbeit";
+"Other" = "Andere";
+"Daily" = "Täglich";
+"Weekly" = "Wöchentlich";
+"Monthly" = "Monatlich";
+"Yearly" = "Jährlich";
+"All Times" = "Alle Zeiten";
+"Interval" = "Intervall";
+"Stars" = "Sterne";
+"Not Yok" = "keine Notiz";
+
+
+"Sağlık" = "Gesundheit";
+"Araba Masrafları" = "Autokosten";
+"Ev Harcamaları" = "Haushaltsausgaben";
+"Hayvan Bakım" = "Tierpflege";
+"Ulaşım" = "Transport";
+"Dışarıda Yemek" = "Essen gehen";
+"Spor" = "Sport";
+"Giyim" = "Kleidung";
+"Alışveriş" = "Einkaufen";
+"Evcil Hayvan" = "Tierpflege";
+"Tatil" = "Urlaub";
+"Eğitim" = "Bildung";
+"İş" = "Arbeit";
+"Diğer" = "Andere";
+"Maaş" = "Gehalt";
+"Borsa" = "Börse";
+"Faiz" = "Zinsen";
+"Hediye" = "Geschenk";
+"Pasif Gelir" = "Passives Einkommen";
+"Harçlık" = "Zulage";
+"Avans" = "Vorschuss";
+"Diğer" = "Andere";
+
+"No transaction were found to chosen interval date and category" = "Für das ausgewählte Intervalldatum und die ausgewählte Kategorie wurden keine Transaktionen gefunden";
+
+"No transactions were found" = "Es wurden keine Transaktionen gefunden";
+
+
+"Please Select a Transaction Category" = "Bitte wählen Sie eine Transaktionskategorie aus.";
+"Wrong Input" = "Falsche Eingabe.";
+"Please Type a Number" = "Bitte geben Sie eine Nummer ein.";
+
+
+"All Transactions" = "Alle Transaktionen";
+"Transactions for a day" = "Transaktionen für einen Tag";
+"Transactions for a week" = "Transaktionen für eine Woche";
+"Transactions for a month" = "Transaktionen für einen Monat";
+"Transactions for a year" = "Transaktionen für ein Jahr";
+
+"Budget Control" = "Budgetkontrolle";
+
+"Yıldızla" = "Stern";
+"Sil" = "Löschen";

@@ -1,0 +1,93 @@
+"Hoş geldiniz İsim" = "欢迎 姓名";
+"Recent Transactions" = "最近的交易";
+"View all" = "查看全部";
+"Income" = "收入";
+"Expense" = "支出";
+"Total" = "总计";
+"Current Balance" = "当前余额";
+"No note" = "无注";
+"Amount:" = "数量:";
+"Category:" = "类别:";
+"Category" = "类别";
+"Note:" = "备注:";
+"Date:" = "日期:";
+"Transaction Categories" = "交易类别";
+"Type a note" = "输入备注";
+"Salary" = "工资";
+"Exchange" = "交换";
+"Interest" = "利息";
+"Gift" = "礼物";
+"Passive Income" = " passif收入";
+"Allowance" = "零用钱";
+"Advance" = "预付";
+"Sunday" = "星期日";
+"Monday" = "星期一";
+"Tuesday" = "星期二";
+"Thursday" = "星期三";
+"Wednesday" = "星期四";
+"Friday" = "星期五";
+"Saturday" = "星期六";
+"Health" = "健康";
+"Car Expenses" = "汽车费用";
+"Household" = "家用";
+"Pet Care" = "宠物护理";
+"Transport" = "交通";
+"Dining Out" = "外出就餐";
+"Sports" = "运动";
+"Clothing" = "衣服";
+"Shopping" = "购物";
+"Vacation" = "度假";
+"Education" = "教育";
+"Work" = "工作";
+"Daily" = "每日";
+"Weekly" = "每周";
+"Monthly" = "每月";
+"Yearly" = "每年";
+"All Times" = "所有时间";
+"Interval" = "间隔";
+"Stars" = "星星";
+"Not Yok" = "没有注释";
+
+"Sağlık" = "健康";
+"Araba Masrafları" = "汽车费用";
+"Ev Harcamaları" = "家庭支出";
+"Hayvan Bakım" = "宠物护理";
+"Ulaşım" = "交通";
+"Dışarıda Yemek" = "外出就餐";
+"Spor" = "运动";
+"Giyim" = "服装";
+"Alışveriş" = "购物";
+"Evcil Hayvan" = "宠物护理";
+"Tatil" = "度假";
+"Eğitim" = "教育";
+"İş" = "工作";
+"Maaş" = "工资";
+"Borsa" = "交易";
+"Faiz" = "利息";
+"Hediye" = "礼物";
+"Pasif Gelir" = "被动收入";
+"Harçlık" = "零用钱";
+"Avans" = "预付";
+"Diğer" = "其他";
+
+
+"No transactions were found" = "没有找到任何交易";
+
+
+"No transaction were found to chosen interval date and category" = "未发现所没有找到任何交易间隔日期和类别的交易";
+
+
+"Please Select a Transaction Category" = "请选择一个交易类别";
+"Wrong Input" = "输入错误";
+"Please Type a Number" = "请输入一个数字";
+
+
+"All Transactions" = "所有交易";
+"Transactions for a day" = "每日交易";
+"Transactions for a week" = "每周交易";
+"Transactions for a month" = "每月交易";
+"Transactions for a year" = "每年交易";
+"Budget Control" = "预算控制";
+
+"Yıldızla" = "星星";
+"Sil" = "删除";

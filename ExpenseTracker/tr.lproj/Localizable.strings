@@ -1,0 +1,71 @@
+
+"Hoş geldiniz İsim" = "Hoşlandınız";
+"Recent Transactions" = "Son Ödemeler";
+"View all" = "Hepsini gör";
+"Income" = "Gelir";
+"Expense" = "Gider";
+"Total" = "Total";
+"Current Balance" = "Ana Para";
+"No note" = "Not yok";
+"Amount:" = "Tutar:";
+"Category:" = "Kategori:";
+"Category" = "Kategori";
+"Note:" = "Not:";
+"Date:" = "Tarih:";
+"Transaction Categories" = "İşlem Kategorileri";
+"Type a note" = "Not yazın";
+"Salary" = "Maaş";
+"Exchange" = "Borsa";
+"Interest" = "Faiz";
+"Gift" = "Hediye";
+"Passive Income" = "Pasif Gelir";
+"Allowance" = "Harçlık";
+"Advance" = "Avans";
+"Other" = "Diğer";
+"Sunday" = "Pazar";
+"Monday" = "Pazartesi";
+"Tuesday" = "Salı";
+"Thursday" = "Çarşamba";
+"Wednesday" = "Perşembe";
+"Friday" = "Cuma";
+"Saturday" = "Cumartesi";
+"Health" = "Sağlık";
+"Car Expenses" = "Araba Masrafı";
+"Household" = "Ev Harcaması";
+"Pet Care" = "Hayvan Bakım";
+"Transport" = "Ulaşım";
+"Dining Out" = "Dışarda Yemek";
+"Sports" = "Spor";
+"Clothing" = "Giyim";
+"Shopping" = "Alışveriş";
+"Vacation" = "Tatil";
+"Education" = "Eğitim";
+"Work" = "İş";
+"Other" = "Diğer";
+"Daily" = "Günlük";
+"Weekly" = "Haftalık";
+"Monthly" = "Aylık";
+"Yearly" = "Yıllık";
+"All Times" = "Tümü";
+"Interval" = "Aralık";
+"Stars" = "Yıldızlananlar";
+
+
+
+"No transactions were found" = "Hiçbir işlem bulunamadı";
+
+"No transaction were found to chosen interval date and category" = "Seçilen aralık tarihi ve kategorisine göre işlem bulunamadı";
+
+
+"Please Select a Transaciton Category" = "Lütfen Bir İşlem Kategorisi Seçiniz";
+"Wrong Input" = "Yanlış Giriş";
+"Please Type a Number" = "Lütfen geçerli bir sayı giriniz";
+
+"All Transactions" = "Tüm İşlemler";
+"Transactions for a day" = "Günlük İşlemler";
+"Transactions for a week" = "Haftalık İşlemler";
+"Transactions for a month" = "Aylık İşlemler";
+"Transactions for a year" = "Yıllık İşlemler";
+
+"Budget Control" = "Bütçe Kontrolü";
+
