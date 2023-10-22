@@ -716,7 +716,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate, NSFetchedResul
                 guard let note = task.value(forKey: "note") as? String else {return}
                 guard let moneyEach = task.value(forKey: "privatemoney") as? Float else {return}
               //  guard let totalMoney = task.value(forKey: "totalmoney") as? Float else {return}
-                totalMoney = 5.0
+             //   totalMoney = 5.0
                 guard let date = task.value(forKey: "date") as? Date else {return}
                 guard let dateString = task.value(forKey: "datestring") as? String else {return}
 
@@ -773,7 +773,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate, NSFetchedResul
                         expenseMoney += moneyEach
                     }
 
-                    totalMoney = 5
+                //    totalMoney = 5
                     self.savedTracks.append(savedTrack(category: category, id: id, note: note, moneyEach: moneyEach, date: date, dateString: dateString))
                     
                    

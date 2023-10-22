@@ -32,6 +32,7 @@
 		DE8F57DB2AC373ED0044BD0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE8F57DD2AC373ED0044BD0B /* Localizable.strings */; };
 		DE9A640A2AACB62F0028A04B /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = DE9A64092AACB62F0028A04B /* FSCalendar */; };
 		DEA9CB3A2AA0D1DC003C6744 /* RecentTransactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA9CB392AA0D1DC003C6744 /* RecentTransactionCollectionViewCell.swift */; };
+		DEB20FC32AD9C24700633701 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB20FC22AD9C24700633701 /* LineChartViewController.swift */; };
 		DEEEECE12AAE5067005716B4 /* TableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEEECE02AAE5067005716B4 /* TableViewCell2.swift */; };
 		DEF0C5912ACA295100F3F166 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF0C5902ACA295100F3F166 /* StarsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		DE8F57E02AC375020044BD0B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DE8F57E12AC375020044BD0B /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DEA9CB392AA0D1DC003C6744 /* RecentTransactionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEB20FC22AD9C24700633701 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		DEEEECE02AAE5067005716B4 /* TableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell2.swift; sourceTree = "<group>"; };
 		DEF0C5902ACA295100F3F166 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 				DE858BC12AAB473E00ACB50A /* EachCategoryViewController.swift */,
 				DE7A99032AB9B4AE008549D1 /* ExpensesDetailController.swift */,
 				DEF0C5902ACA295100F3F166 /* StarsViewController.swift */,
+				DEB20FC22AD9C24700633701 /* LineChartViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				DE858BC22AAB473E00ACB50A /* EachCategoryViewController.swift in Sources */,
 				DE845CD92A9F74D100100FA6 /* oylesineViewController.swift in Sources */,
 				DE3E067F2A9A7532000FCC4E /* MainViewController.swift in Sources */,
+				DEB20FC32AD9C24700633701 /* LineChartViewController.swift in Sources */,
 				DE3E069A2A9A83E6000FCC4E /* AddBudgetViewController.swift in Sources */,
 				DE3E067B2A9A7532000FCC4E /* AppDelegate.swift in Sources */,
 				DE3E06962A9A76F2000FCC4E /* LayoutAnchors.swift in Sources */,
@@ -455,11 +459,12 @@
 				DEVELOPMENT_TEAM = ZY98G8GQD4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,11 +489,12 @@
 				DEVELOPMENT_TEAM = ZY98G8GQD4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

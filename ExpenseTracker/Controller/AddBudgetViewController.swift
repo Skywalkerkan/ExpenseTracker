@@ -552,7 +552,7 @@ class AddBudgetViewController: UIViewController, UITextFieldDelegate, FSCalendar
         }else{
             addTrack()
             guard let storedTrack = UserDefaults.standard.object(forKey: "totalMoney") as? Float else{return}
-           
+            navigationController?.popViewController(animated: true)
            
         }
         

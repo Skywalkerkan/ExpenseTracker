@@ -103,12 +103,14 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
                 if let date = expense.date {
                  //   print(date)
                     let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "MM-dd-yyyy" // İstediğiniz tarih formatına uygun olarak değiştirin
+                 //   dateFormatter.dateFormat = "MM-dd-yyyy" // İstediğiniz tarih formatına uygun olarak değiştirin
+                    dateFormatter.dateFormat = "yyyy-MM-dd"
+
                   //  dateFormatter.dateStyle = .long
                     let dateString = dateFormatter.string(from: date)
                     if expensesByDate[dateString] == nil {
                         expensesByDate[dateString] = []
-                        print(dateString)
+                     //   print(dateString)
                     }
                    
       
@@ -139,6 +141,8 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
                 }
                 totalExpensesByDate[dateString] = totalExpense
             }
+            
+            
             
             gelirTextLabel.text = "\(gelir)"
             giderTextLabel.text = "\(-gider)"
@@ -347,7 +351,7 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
         view.addSubview(tableViewSirala)
         tableViewSirala.backgroundColor = .red
         tableViewSirala.sectionHeaderTopPadding = 0
-        tableViewSirala.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: nil, leading: nil, trailing: view.trailingAnchor, paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0, width: 2*view.frame.size.width/3 , height: 3*view.frame.size.height/10)
+        tableViewSirala.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: nil, leading: nil, trailing: view.trailingAnchor, paddingTop: 0, paddingBottom: 0, paddingLeft: 0, paddingRight: 0, width: 2*view.frame.size.width/4 , height: 3*view.frame.size.height/10)
         tableViewSirala.isHidden = true
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -539,11 +543,13 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
             let dateString = sortedDates[section]
             var dateGosterilecek = ""
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MM-dd-yyyy"
+           // dateFormatter.dateFormat = "MM-dd-yyyy"
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+
             if let date = dateFormatter.date(from: dateString) {
                 dateFormatter.dateStyle = .long
                 let formattedDate = dateFormatter.string(from: date)
-                print(formattedDate) // Bu, "01 Ekim 2023" çıktısını verecektir
+            //    print(formattedDate) // Bu, "01 Ekim 2023" çıktısını verecektir
                 dateGosterilecek = formattedDate
             } else {
                 print("Geçersiz tarih biçimi")
@@ -828,6 +834,8 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
             // Geri düğmesi rengini beyaz olarak ayarlayın (isteğe bağlı)
           //  navigationBar.tintColor = UIColor.white
         }
+        
+        fetchStaredTrackes()
     }
     
     
@@ -939,81 +947,92 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let contextItem = UIContextualAction(style: .destructive, title: "delete") {  (contextualAction, view, boolValue) in
-            let sortedDates = self.expensesByDate.keys.sorted(by: >)
-            let date = sortedDates[indexPath.section]
-            print("aaaa")
-            
-         //   print(sortedDates[indexPath.section])
-         
         
-            if let expense = self.expensesByDate[date]?[indexPath.row] {
+        
+        switch tableView{
+            
+        case tableView1:
+            let contextItem = UIContextualAction(style: .destructive, title: "delete") {  (contextualAction, view, boolValue) in
+                let sortedDates = self.expensesByDate.keys.sorted(by: >)
+                let date = sortedDates[indexPath.section]
+                print("aaaa")
+                
+             //   print(sortedDates[indexPath.section])
+             
+            
+                if let expense = self.expensesByDate[date]?[indexPath.row] {
 
-                deleteExpense(id: expense.id!)
-                
-                print("Silindi")
-                
-               /* DispatchQueue.main.async {
+                    deleteExpense(id: expense.id!)
                     
-                   // self.savedTracks.remove(at: indexPath.item)
-                    print("expensesSilindi")
-                    self.expensesByDate[date]?.remove(at: indexPath.row)
-                    print("expenses")
-                    print(self.expensesByDate[date])
+                    print("Silindi")
                     
-                    if (self.expensesByDate[date] == []){
-                        self.expensesByDate.removeValue(forKey: date)
-                    }
-                    
-                    self.tableView1.reloadData()
-                }*/
+                   /* DispatchQueue.main.async {
+                        
+                       // self.savedTracks.remove(at: indexPath.item)
+                        print("expensesSilindi")
+                        self.expensesByDate[date]?.remove(at: indexPath.row)
+                        print("expenses")
+                        print(self.expensesByDate[date])
+                        
+                        if (self.expensesByDate[date] == []){
+                            self.expensesByDate.removeValue(forKey: date)
+                        }
+                        
+                        self.tableView1.reloadData()
+                    }*/
+                }
             }
-        }
+            
+            
+            
+            let contextItem2 = UIContextualAction(style: .normal, title: "Yıldızla") { (contextualAction, view, boolValue) in
+                // Yıldız işlemini burada gerçekleştirin
         
-        
-        
-        let contextItem2 = UIContextualAction(style: .normal, title: "Yıldızla") { (contextualAction, view, boolValue) in
-            // Yıldız işlemini burada gerçekleştirin
-    
-            let sortedDates = self.expensesByDate.keys.sorted(by: >)
+                let sortedDates = self.expensesByDate.keys.sorted(by: >)
+                let date = sortedDates[indexPath.section]
+                
+                guard let id = self.expensesByDate[date]![indexPath.row].id else { return }
+                        self.addStarTrack(id: id)
+                
+            }
+            
+            let sortedDates = expensesByDate.keys.sorted(by: >)
             let date = sortedDates[indexPath.section]
             
-            guard let id = self.expensesByDate[date]![indexPath.row].id else { return }
-                    self.addStarTrack(id: id)
+            if staredTracks.contains(where: {$0.id == expensesByDate[date]![indexPath.row].id}) {
+                print("a")
+                 contextItem2.image = UIImage(systemName: "star.fill")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
+             }else{
+                 print("b")
+
+                 contextItem2.image = UIImage(systemName: "star")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
+             }
+            contextItem.image = UIImage(systemName: "trash.fill")
+            print("c")
+
+           
             
+        
+
+            
+
+
+
+
+            
+
+            //contextItem2.title = "Yıldızla"
+
+
+            let swipeActions = UISwipeActionsConfiguration(actions: [contextItem, contextItem2])
+
+            return swipeActions
+            
+        default:
+            return UISwipeActionsConfiguration()
+
         }
         
-        let sortedDates = expensesByDate.keys.sorted(by: >)
-        let date = sortedDates[indexPath.section]
-        
-        if staredTracks.contains(where: {$0.id == expensesByDate[date]![indexPath.row].id}) {
-            print("a")
-             contextItem2.image = UIImage(systemName: "star.fill")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
-         }else{
-             print("b")
-
-             contextItem2.image = UIImage(systemName: "star")?.withTintColor(.yellow, renderingMode: .alwaysOriginal)
-         }
-        contextItem.image = UIImage(systemName: "trash.fill")
-        print("c")
-
-       
-        
-    
-
-        
-
-
-
-
-        
-
-        //contextItem2.title = "Yıldızla"
-
-
-        let swipeActions = UISwipeActionsConfiguration(actions: [contextItem, contextItem2])
-
-        return swipeActions
     }
 
     
@@ -1061,6 +1080,8 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
                 self.staredTracks.append(savedTrack(category: category, id: id, note: note, moneyEach: moneyEach, date: date, dateString: dateString))
                 
             }
+         //   print(self.staredTracks)
+            
            
         } catch {
             print("Veri çekilemedi: \(error)")
@@ -1199,7 +1220,7 @@ class oylesineViewController: UIViewController, UITableViewDelegate, UITableView
                 guard let moneyEach = task.value(forKey: "privatemoney") as? Float else {return}
 
 
-                print(moneyEach)
+              //  print(moneyEach)
                 
                 
                 
@@ -1232,7 +1253,7 @@ func deleteExpense(id: UUID){
           //  if let expenseToDelete = result.first
                 
                 if idGelen == id{
-                    print(task)
+                 //   print(task)
                     context.delete(task)
                 
 
