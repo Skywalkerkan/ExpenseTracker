@@ -166,7 +166,9 @@ class LineChartViewController: UIViewController, ChartViewDelegate {
                 if let date = expense.date {
                  //   print(date)
                     let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "MM-dd-yyyy" // İstediğiniz tarih formatına uygun olarak değiştirin
+                  //  dateFormatter.dateFormat = "MM-dd-yyyy" // İstediğiniz tarih formatına uygun olarak değiştirin
+                    dateFormatter.dateFormat = "MM-dd-yyyy"
+                    dateFormatter.dateFormat = "yyyy-MM-dd"
                   //  dateFormatter.dateStyle = .long
                     let dateString = dateFormatter.string(from: date)
                     if expensesByDate[dateString] == nil {
@@ -219,18 +221,43 @@ class LineChartViewController: UIViewController, ChartViewDelegate {
             for (dateString, expenses) in sortedExpensesByDate {
                // print(dateString)
                 let totalExpense = expenses.reduce(into: 0.0) { result, expense in
-                    result += expense.privatemoney
+                    
+                    if expense.privatemoney < 0.0 {
+                        result -= Double(expense.privatemoney) // Burası değişti
+                    }
+                    
+                 //   result += expense.privatemoney
                 }
-                totalExpensesByDate[dateString] = totalExpense
+                totalExpensesByDate[dateString] = Float(totalExpense)
             }
          //  print(totalExpensesByDate)
             
             let sortedTotalExpenses = totalExpensesByDate.sorted { $0.key < $1.key }
             var i = 0.0
-
+            var previousMonth = ""
             for (dateString, totalExpense) in sortedTotalExpenses {
                 print("Tarih: \(dateString), Toplam Gider: \(totalExpense)")
-                dateStringList.append(dateString)
+                
+                let dateFormatter = DateFormatter()
+                
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+
+
+                if let date = dateFormatter.date(from: dateString) {
+                    dateFormatter.dateFormat = "MMMM"
+                    let monthName = dateFormatter.string(from: date)
+                    
+                    
+                    
+                    
+                    
+                    dateStringList.append(monthName)
+                    
+                    
+                    
+                } else {
+                    print("Tarih dönüşümü başarısız.")
+                }
                 yValues2.append(ChartDataEntry(x: Double(i), y: Double(totalExpense)))
                 i+=1
             }
